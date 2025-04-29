@@ -1,0 +1,9 @@
+body { margin:0; font-family: sans-serif; background:#f4f4f4; }
+.hidden { display: none; }
+
+header {
+  background:#222; color:#fff; padding:1rem;
+  display:flex; align-items:center; justify-content: space-between;
+}
+.search-bar input { padding:0.5rem; width:200px; }
+.search-bar button { padding:0.5rem 1rem; margin-left:0.5rem; }
