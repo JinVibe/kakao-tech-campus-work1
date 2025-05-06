@@ -5,5 +5,39 @@ header {
   background:#222; color:#fff; padding:1rem;
   display:flex; align-items:center; justify-content: space-between;
 }
-.search-bar input { padding:0.5rem; width:200px; }
-.search-bar button { padding:0.5rem 1rem; margin-left:0.5rem; }
+.search-bar input { padding:0.5rem; width:200px; border-radius:4px; border:none; }
+.search-bar button {
+  padding:0.5rem 1rem; margin-left:0.5rem;
+  background:#ff6b6b; color:#fff; border:none; border-radius:4px;
+  cursor:pointer; transition: background .2s;
+}
+.search-bar button:hover { background:#ee5253; }
+
+.movie-list {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  gap:1rem; padding:1rem;
+}
+.movie-card {
+  background:#fff; border-radius:8px; overflow:hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor:pointer; transition: transform .1s;
+}
+.movie-card:hover { transform: translateY(-4px); }
+.movie-card img { width:100%; display:block; }
+.movie-card h3 { margin:0.5rem; font-size:1.1rem; }
+.movie-card p { margin:0.5rem; font-size:0.9rem; color:#555; }
+
+.modal {
+  position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.6); display:flex;
+  align-items:center; justify-content:center;
+}
+.modal-content {
+  background:#fff; padding:1.5rem; border-radius:8px;
+  width:90%; max-width:500px; position:relative;
+}
+.modal-close {
+  position:absolute; top:0.5rem; right:0.5rem;
+  font-size:1.5rem; cursor:pointer;
+}

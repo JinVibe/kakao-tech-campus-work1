@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Movie Info</title>
-    <link rel="stylesheet" href="css/styles.css" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>영화 찾는 사이트 - 영찾사</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
+  <header>
     <h1>영화 찾는 사이트 - 영찾사</h1>
     <div class="search-bar">
       <input id="search-input" type="text" placeholder="영화를 검색하세요…" />
       <button id="search-button">검색</button>
     </div>
   </header>
+
   <main>
-    <!-- 카드 리스트 UI -->
+    <div id="movie-list" class="movie-list"></div>
   </main>
 
-  <!-- 영화 상세 모달 -->
   <div id="modal" class="modal hidden">
-
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-overview"></p>
+      <p id="modal-release"></p>
+    </div>
   </div>
 
-  <script src="js/script.js"></script>
+  <script type="module" src="js/script.js"></script>
 </body>
 </html>
